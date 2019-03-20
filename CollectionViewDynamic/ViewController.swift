@@ -129,7 +129,7 @@ extension CollectionViewController {
 
 extension CollectionViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
+        //https://stackoverflow.com/questions/45934523/swift-inserting-a-cell-in-uicollectionview-gives-me-an-error
         self.collectionView?.performBatchUpdates({
             let indexPath = IndexPath(item: self.items.count, section: 0)
             items.append(textField.text!)
